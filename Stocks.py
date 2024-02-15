@@ -63,7 +63,7 @@ if ticker_symbol:
         cash_flow = yf.Ticker(ticker_symbol).cashflow
 
         # Select cash flow variables
-        selected_variables = st.multiselect('Select Cash Flow Variables', cash_flow.rows)
+        selected_variables = st.multiselect('Select Cash Flow Variables', cash_flow.columns)
 
         # Plotting cash flow data
         plt.figure(figsize=(10, 6))
