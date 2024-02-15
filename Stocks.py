@@ -47,7 +47,7 @@ with fundamental_data:
     cf = cash_flow.T[2:]
     cf.columns = list(cash_flow.T.iloc[0])
     st.write(cf)
-    st.bar_chart(cf)
+    #st.bar_chart(cf)
     import streamlit as st
     import yfinance as yf
     import matplotlib.pyplot as plt
